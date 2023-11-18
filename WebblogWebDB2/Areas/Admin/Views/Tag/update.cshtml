@@ -1,0 +1,19 @@
+﻿@model Tag
+
+@{
+    if(ViewBag.Errors != null)
+    {
+       <h1 class="text text-danger">@ViewBag.Errors</h1>
+    }
+}
+
+<form method="post">
+    <a href="/Admin/Tag" class="btn btn-facebook w-25">Come Back</a>
+    <div class="form-group">
+    <label asp-for="TagName">TagName</label>
+        <p class="btn btn-info w-100 m-1">this TagName Update @Model.TagName</p>
+    <input type="text" asp-for="TagName" class="btn btn-facebook w-100" value="@Model.TagName" />
+        <span asp-validation-for="TagName" class="text text-danger"></span>
+    </div>
+    <input type="submit" class="btn btn-info w-100" value="Create" />
+</form>

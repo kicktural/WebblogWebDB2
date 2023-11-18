@@ -1,0 +1,11 @@
+﻿@model Tag
+
+<form method="post">
+    <a href="/Admin/Tag" class="btn btn-facebook w-100">Back</a>
+    <div class="form-group">
+        <label asp-for="TagName" class="text text-black-50">TagName</label>
+        <input type="text" class="btn btn-dark w-100 " asp-for="TagName" value="" />
+        <span asp-validation-for="TagName" class="text-danger"></span>
+    </div>
+    <input type="submit" class="btn btn-info w-50" value="Create"/>
+</form>

@@ -1,0 +1,11 @@
+﻿@model Microsoft.AspNetCore.Identity.IdentityRole
+
+<form method="post">
+    <a href="/Admin/role" class="btn btn-facebook w-100 m-1">Back</a>
+    <div class="form-group">
+    <label asp-for="Name">Name</label>
+        <input type="text" asp-for="Name" class="btn btn-primary form-control w-100" value="text..." />
+    <span asp-validation-for="Name"></span>
+    </div>
+    <input type="submit" class="btn btn-info form-control" value="Create" />
+</form>
